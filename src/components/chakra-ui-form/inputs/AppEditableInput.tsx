@@ -12,12 +12,11 @@ import {
   Controller,
   FieldValues,
   Path,
-  UnPackAsyncDefaultValues,
 } from "react-hook-form";
 
 type Props<T extends Partial<FieldValues>> = {
   control: Control<T>;
-  name: Path<UnPackAsyncDefaultValues<T>>;
+  name: Path<T>;
   label?: string;
   helperText?: string;
   errors: any;

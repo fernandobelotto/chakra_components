@@ -1,5 +1,5 @@
 import { Box, BoxProps, chakra } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live";
 import CodeContainer from "./code-container";
 import CopyButton from "./copy-button";
@@ -16,30 +16,6 @@ const LiveCodePreview = chakra(LivePreview, {
     overflowX: "auto",
   },
 });
-
-const EditableNotice = (props: BoxProps) => {
-  return (
-    <Box
-      position="absolute"
-      width="full"
-      top="-1.25em"
-      roundedTop="8px"
-      bg="#011627"
-      py="2"
-      zIndex="0"
-      letterSpacing="wide"
-      color="gray.400"
-      fontSize="xs"
-      fontWeight="semibold"
-      textAlign="center"
-      textTransform="uppercase"
-      pointerEvents="none"
-      {...props}
-    >
-      {t("component.mdx-components.react-live-block.editable-example")}
-    </Box>
-  );
-};
 
 function ReactLiveBlock({ editable, rawCode, ...rest }) {
   const code = rawCode.trim().replace("// prettier-ignore", "");
@@ -60,7 +36,7 @@ function ReactLiveBlock({ editable, rawCode, ...rest }) {
           </CodeContainer>
         )}
         <CopyButton code={editorCode} />
-        {editable && <EditableNotice />}
+        {/* {editable && <EditableNotice />} */}
       </Box>
       {editable && <LiveError style={liveErrorStyle} />}
     </LiveProvider>

@@ -1,7 +1,6 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import CodeBlock from "../components/codeblock/codeblock";
 import FabButton from "../components/fab-button";
-import { ChakraTable } from "../components/table";
 
 const FabButtonPage = () => {
   return (

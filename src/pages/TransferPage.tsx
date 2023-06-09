@@ -12,7 +12,7 @@ export interface RecordType {
   isSelected?: boolean;
 }
 
-const TransferPage = (props: Props) => {
+const TransferPage = () => {
   const originalData: RecordType[] = [
     { key: v4(), content: faker.name.firstName(), group: "left" },
     { key: v4(), content: faker.name.firstName(), group: "left" },

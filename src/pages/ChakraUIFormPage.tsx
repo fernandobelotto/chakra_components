@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import { ChakraUIForm } from "../components/chakra-ui-form/form/Form";
 import CodeBlock from "../components/codeblock/codeblock";
-import { ChakraTable } from "../components/table";
+
 
 const ChakraUIFormPage = () => {
   return (

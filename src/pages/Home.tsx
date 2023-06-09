@@ -12,7 +12,7 @@ export const Home = () => {
   const components = [
     { slug: "volume", name: "Volume" },
     { slug: "transfer", name: "Transfer" },
-    { slug: "table", name: "Table" },
+    // { slug: "table", name: "Table" },
     { slug: "roles-table", name: "Roles Table" },
     { slug: "fab-button", name: "Fab Button" },
     { slug: "form", name: "Form" },
